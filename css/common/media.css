@@ -1,0 +1,232 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .cards__block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .confirmYourOrder__modal,
+    .orderAccepted__modal
+    {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        position: static;
+    }
+    .navbar__input {
+        font-size: 12px;
+    }
+    .navbar__link, .navbar__link2 {
+        font-size: 14px;
+    }
+    .cards__top {
+        padding-top: 24px;
+        margin-bottom: 20px;
+      }
+    .cards__block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .confirmYourOrder__modal, 
+    .orderAccepted__modal 
+    {
+        width: 50%;
+    }
+    .confirmYourOrder__counter-text,
+    .confirmYourOrder__counter-timer
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: auto;
+    }
+    .navbar__logo {
+        display: none;
+    }
+    .navbar__left {
+        width: 100%;
+    }
+    .navbar__form {
+        max-width: 100%;
+    }
+    .swiper__button {
+        display: none;
+    }
+    .info .container {
+        padding: 0;
+    }
+    .info__block ,
+    .info__block-price
+    {
+        padding: 15px;
+    }
+    .info__title {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    .info__desc {
+        -webkit-line-clamp: 9;
+    }
+    .info__block-characteristics {
+        padding: 15px 0;
+    }
+    .info__title-characteristics,
+    .info__show-more-characteristics 
+    {
+        padding-left: 15px;
+    }
+    .info__block-characteristics-item {
+        padding: 9px 15px;
+    }
+    .info__block-characteristics-list {
+        height: 170px;
+    }
+    .info__desc, 
+    .info__top-link, 
+    .info__show-more,
+    .info__location-city,
+    .info__block-salesman-list li, 
+    .info__block-characteristics-item,
+    .info__block-paymentMethods-item,
+    .info__block-paymentMethods-more,
+    .info__show-more-paymentMethods 
+    {
+        font-size: 13px;
+    }
+    .info__location-name {
+        font-size: 15px;
+    }
+    .info__block-salesman-list li i {
+        font-size: 20px;
+    }
+    .info__button {
+        font-size: 14px;
+    }
+    .info__block-salesman-phoneNumber {
+        max-width: 65px;
+    }
+    .info__price span:nth-of-type(1) {
+        font-size: 22px;
+    }
+    .info__price span:nth-of-type(2) {
+        font-size: 13px;
+    }
+    .cards__top  {
+       justify-content: space-between;
+       width: 100%;
+       margin-bottom: 15px; 
+    }
+    .cards__title {
+        font-size: 18px;
+    }
+    .cards__title, .cards__top i {
+        font-size: 18px;
+    }
+    .cards__block {
+        gap: 10px;
+    }
+    .cards__item {
+        padding: 12px;
+    }
+    .cards__item-title {
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .cards__item-inStock {
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .cards__item-price {
+        padding-bottom: 10px;
+    }
+    .cards__item-price span:nth-of-type(1) {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .cards__item-price span:nth-of-type(2) {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .cards__item-shop {
+        font-size: 14px;
+        font-weight: 800;
+        padding: 10px 0 6px;
+    }
+    .cards__item-city {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .cards__discount {
+        top: 10px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .cards__set {
+        gap: 10px;
+    }
+    .confirmYourOrder__modal, 
+    .orderAccepted__modal 
+    {
+        width: 60%;
+    }
+    .confirmYourOrder__content-title,
+    .orderAccepted__content-place-name
+    {
+        font-size: 14px;
+    }
+    .confirmYourOrder__content-desc,
+    .orderAccepted__content-place-address 
+    {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .confirmYourOrder__content-label span {
+        font-size: 12px;
+    }    
+    .confirmYourOrder__buttons button {
+        font-size: 14px;
+    }
+    .orderAccepted__content-list li {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    .confirmYourOrder__modal,
+    .orderAccepted__modal
+    {
+        width: 85%;
+    }
+}
+
+@media (max-width: 350px) {
+    .info__buttons {
+        flex-direction: column;
+        align-items: start;
+    }
+    .info__buttons-price {
+        flex-direction: row;
+    }
+    .confirmYourOrder__counter-text,
+    .confirmYourOrder__counter-timer
+    {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,79 @@
+:root {
+    --bodyBg: #F5F6F8;
+    --baseColor: #F24236;
+    --baseColorTransparent: #FDE4E3;
+    --titleColor: #344054;
+    --linkColor: #2F2F2F;
+    --navLinkColor: #667085;
+    --refColor: #2D47A3;
+    --listItemBg: #F6F8F9;
+    --locationColor: #E8EAEC;
+    --greenColor: #129A1B;
+    --checkCircle: #32BA7C;
+    --yellowColor: #FAC102;
+    --redColor: #F24236;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-thumb  {
+    background: var(--baseColor);
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-corner  {
+    background: var(--baseColor);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    background: var(--bodyBg);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input, textarea {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.green {
+    color: var(--greenColor);
+}
+
+.yellow {
+    color: var(--yellowColor);
+}
+
+.red {
+    color: var(--redColor);
+}

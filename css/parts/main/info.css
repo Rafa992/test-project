@@ -1,0 +1,330 @@
+.info {
+    padding-top: 15px;
+}
+
+.info .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info__block, .info__block-paymentMethods {
+    padding: 25px;
+    display: flex;
+    border-radius: 8px;
+    background: white;
+    flex-direction: column;
+    display: none;
+    transition: 1000ms;
+}
+
+.info__block-paymentMethods {
+    padding-top: 15px;
+    display: flex;
+}
+
+.info__block.active {
+    display: flex;
+}
+
+.info__block.showMore .info__desc{
+    display: block; 
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+}
+
+.info__block.showMore .info__desc{
+    display: block;
+}
+
+.info__block.showMore .info__show-more span:nth-of-type(1), 
+.info__block.showMore .info__show-more i:nth-of-type(1) 
+{
+    display: block;
+}
+
+.info__block.showMore .info__show-more span:nth-of-type(2), 
+.info__block.showMore .info__show-more i:nth-of-type(2) 
+{
+    display: none;
+}
+
+.info__block-characteristics {
+    padding: 25px 0;
+}
+
+.info__title-characteristics,
+.info__show-more-characteristics 
+{
+    padding-left: 25px;
+}
+
+.info__block-characteristics.showMore .info__block-characteristics-list {
+    height: auto;
+}
+
+.info__show-more span:nth-of-type(1),
+.info__show-more i:nth-of-type(1)
+{
+    display: none;
+}
+
+.info__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--titleColor);
+}
+
+.info__desc {
+    color: var(--titleColor);
+    font-size: 20px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 17px;
+    transition: 1000ms;
+}
+
+.info__show-more {
+    color: var(--refColor);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info__block-characteristics-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    height: 205px;
+    overflow: hidden;
+}
+
+.info__block-paymentMethods-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 16px;
+}
+
+.info__block-characteristics-item {
+    color: var(--titleColor);
+    padding: 9px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info__block-paymentMethods-item {
+    color: var(--titleColor);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info__block-characteristics-item:nth-child(odd) {
+    background: var(--listItemBg);
+}
+
+.info__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.info__top h2 {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.info__top-link {
+    font-size: 18px;
+    color: var(--baseColor);
+}
+
+.info__location {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info__location-logo {
+    width: 80px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--locationColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__location-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info__location-name {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--titleColor);
+}
+
+.info__location-city {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--locationColor);
+}
+
+.info__block-salesman-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info__block-salesman-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.info__block-salesman-list li i {
+    font-size: 25px;
+}
+
+.info__block-salesman-list i,
+.info__block-salesman-schedules,
+.info__block-salesman-showNumber,
+.info__block-salesman-website 
+{
+    color: var(--baseColor);
+}
+
+.info__buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info__button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info__buttons-goods {
+    background: var(--baseColor);
+    color: white;
+
+}
+
+.info__buttons-call {
+    background: var(--baseColorTransparent);
+    color: var(--baseColor);
+}
+
+.info__block-salesman-phoneNumber {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.info__block-salesman-phoneNumber.show {
+    white-space: normal;
+    text-overflow: clip;
+    max-width: none;
+    overflow: visible;
+}
+
+.info__block-paymentMethods-more {
+    height: 0;
+    color: var(--titleColor);
+    font-size: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.info__block-paymentMethods-more.show {
+    height: auto;
+}
+
+.info__show-more-paymentMethods {
+    color: var(--refColor);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info__show-more-paymentMethods i:nth-of-type(1) {
+    display: none;
+}
+
+.info__block-paymentMethods-more.show + .info__show-more-paymentMethods i:nth-of-type(1) {
+    display: block;
+}
+
+.info__block-paymentMethods-more.show + .info__show-more-paymentMethods i:nth-of-type(2) {
+    display: none;
+}
+
+.info__block-price {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.info__notAvailable {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.info__buttons-price {
+    max-width: 340px;
+    width: 100%;
+}
+
+.info__buttons-price button:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+.info__price {
+    color: var(--baseColor);
+    margin-bottom: 16px;
+}
+
+.info__price span:nth-of-type(1) {
+    font-size: 35px;
+    font-weight: 700;
+}
+.info__price span:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info__notAvailable .info__buttons-call {
+    font-weight: 500;
+}
+
+.info__notAvailable .info__buttons-code {
+    font-weight: 500;
+    color: var(--navLinkColor);
+}

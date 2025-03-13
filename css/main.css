@@ -1,0 +1,8 @@
+@import './common/fonts.css';
+@import './common/common.css';
+@import './parts/header/header.css';
+@import './parts/main/banner.css';
+@import './parts/main/info.css';
+@import './parts/main/cards.css';
+@import './parts/main/confirmYourOrder.css';
+@import './parts/footer/footer.css';
